@@ -1,0 +1,16 @@
+case "$1" in
+  --terminal)
+    alacritty;;
+  --update)
+    alacritty --hold --class Updating,Alacritty -e sh -c "sudo yay -Syyu --devel && zsh";;
+  --checkupdates)
+    alacritty --hold --class Updating,Alacritty -e sh -c "yay -Qu && bash";;		
+  --soundcontrol)
+    pavucontrol;;
+  #Apps
+  --browser)
+	firefox;;
+  *)
+    echo "Opción no válida";;
+esac
+

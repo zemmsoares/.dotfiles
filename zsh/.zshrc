@@ -1,11 +1,9 @@
+export PATH="$PATH:$HOME/.local/bin/scripts/"
 export ZSH="$HOME/.oh-my-zsh"
-export ANDROID_HOME="/home/zm/Android/Sdk/"
 export PATH=$PATH:/home/zm/.local/bin
-# composedr tailpress
-export PATH="$PATH:/home/zm/.config/composer/vendor/bin"
+export PATH="/home/zemmsoares/.local/bin:$PATH"
 
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="eastwood"
 
 plugins=(git zsh-autosuggestions)
 

@@ -1,13 +1,28 @@
 #!/bin/bash
+(
+  flock 200
 
-# Terminate already running bar instances
-killall -q polybar
-# If all your bars have ipc enabled, you can also use
-# polybar-msg cmd quit
+  killall -q polybar
 
-# Launch Polybar, using default config location ~/.config/polybar/config.ini
+  while pgrep -u $UID -x polybar > /dev/null; do sleep 0.5; done
 
+  outputs=$(xrandr --query | grep " connected" | cut -d" " -f1)
+  tray_output=eDP-1
 
-polybar -q mybar 2>&1 | tee -a /tmp/polybar.log & disown
+  for m in $outputs; do
+    if [[ $m == "HDMI-1" ]]; then
+        tray_output=$m
+    fi
+  done
 
-echo "Polybar launched..."
+  for m in $outputs; do
+    export MONITOR=$m
+    export TRAY_POSITION=none
+    if [[ $m == $tray_output ]]; then
+      TRAY_POSITION=right
+    fi
+
+    polybar --reload main </dev/null >/var/tmp/polybar-$m.log 2>&1 200>&- &
+    disown
+  done
+) 200>/var/tmp/polybar-launch.lock
