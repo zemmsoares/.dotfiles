@@ -1,6 +1,7 @@
-[submodule ".dotfiles/polybar/.config/polybar/custom-modules"]
-	path = .dotfiles/polybar/.config/polybar/custom-modules
-	url = git@github.com:zemmsoares/polybar-notion.git
-[submodule "polybar/.config/polybar/custom-modules/notion"]
+[submodule "startpage"]
+	path = startpage
+	url = https://github.com/zemmsoares/startpage.git
+
+[submodule "notion"]
 	path = polybar/.config/polybar/custom-modules/notion
-	url = git@github.com:zemmsoares/polybar-notion.git
+	url = https://github.com/zemmsoares/polybar-notion.git
