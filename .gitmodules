@@ -1,7 +1,7 @@
 [submodule "startpage"]
 	path = startpage
-	url = https://github.com/zemmsoares/startpage.git
+	url = git@github.com:zemmsoares/startpage.git
 
 [submodule "notion"]
 	path = polybar/.config/polybar/custom-modules/notion
-	url = https://github.com/zemmsoares/polybar-notion.git
+	url = git@github.com:zemmsoares/polybar-notion.git

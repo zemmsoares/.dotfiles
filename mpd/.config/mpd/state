@@ -1,0 +1,218 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+state: pause
+current: 25
+time: 9.421000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/01 - Ace Of Spades.m4a
+1:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/02 - Love Me Like A Reptile.m4a
+2:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/03 - Shoot You In The Back.m4a
+3:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/04 - Live To Win.m4a
+4:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/05 - Fast And Loose.m4a
+5:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/06 - (We Are) The Road Crew.m4a
+6:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/07 - Fire Fire.m4a
+7:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/08 - Jailbait.m4a
+8:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/09 - Dance.m4a
+9:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/10 - Bite The Bullet.m4a
+10:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/11 - The Chase Is Better Than The Catch.m4a
+11:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/12 - The Hammer.m4a
+12:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/01 - Ace Of Spades.m4a
+13:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/02 - Love Me Like A Reptile.m4a
+14:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/03 - Shoot You In The Back.m4a
+15:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/04 - Live To Win.m4a
+16:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/05 - Fast And Loose.m4a
+17:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/06 - (We Are) The Road Crew.m4a
+18:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/07 - Fire Fire.m4a
+19:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/08 - Jailbait.m4a
+20:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/09 - Dance.m4a
+21:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/10 - Bite The Bullet.m4a
+22:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/11 - The Chase Is Better Than The Catch.m4a
+23:albums/metal/motorhead/1980 - Motorhead - Ace Of Spades (Bronze, 202 876-320, DE, 16-44)/12 - The Hammer.m4a
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 0-135440
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 01
+Title: Anthropogenic: End Transmission
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 135440-358413
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 02
+Title: The Geocide
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 358413-592426
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 03
+Title: Be Still Our Bleeding Hearts
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 592426-891853
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 04
+Title: Vulturous
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 891853-964346
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 05
+Title: The Great Dying
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 964346-1191746
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 06
+Title: One Day Closer to the End of the World
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 1191746-1459826
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 07
+Title: Bring Back the Plague
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 1459826-1735666
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 08
+Title: Absolute Destitute
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 1735666-1801120
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 09
+Title: The Great Dying II
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 1801120-1976800
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 10
+Title: Finish Them
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 1976800-2248066
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 11
+Title: With All Disrespect
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 2248066-2579600
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 12
+Title: Time's Cruel Curtain
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 2579600-2750226
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 13
+Title: The Unerasable Past
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 2750226-3307000
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 14
+Title: Death Atlas
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+song_begin: albums/metal/cattle-decapitation/2019 - Death Atlas (Limited Edition)/Cattle Decapitation - Death Atlas.flac
+Range: 3307000-
+Time: 3557.013000
+Genre: Deathgrind
+Date: 2019
+AlbumArtist: Cattle Decapitation
+Album: Death Atlas
+Track: 15
+Title: In The Kingdom Of The Blind, The One-Eyed Are Kings
+Artist: Cattle Decapitation
+mtime: 1681559365
+song_end
+playlist_end

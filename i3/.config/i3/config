@@ -5,7 +5,7 @@ set $mod Mod1
 font pango:monospace 8
 
 # start services
-exec --no-startup-id feh --bg-fill $HOME/images/wallpapers/001.jpeg
+exec --no-startup-id feh --bg-fill $HOME/Images/wallpapers/001.jpeg
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
