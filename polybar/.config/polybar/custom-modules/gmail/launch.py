@@ -28,7 +28,7 @@ count_was = 0
 def print_count(count, is_odd=False):
     tilde = '~' if is_odd else ''
     output = ''
-    if count > 0:
+    if count >= 0:
         output = unread_prefix + tilde + str(count)
     else:
         output = (args.prefix + ' ' + tilde).strip()
