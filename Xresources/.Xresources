@@ -1,0 +1,35 @@
+! general
+*background: rgb:28/26/29
+*foreground: rgb:e0/dc/e0
+
+! blacks
+*color0: rgb:65/60/66
+*color8: rgb:84/7e/85
+
+! reds
+*color1: rgb:ff/40/50
+*color9: rgb:ff/66/73
+
+! greens
+*color2: rgb:a4/cc/35
+*color10: rgb:b6/d6/5d
+
+! yellows
+*color3: rgb:ff/d2/4a
+*color11: rgb:ff/da/6e
+
+! blues
+*color4: rgb:66/bf/ff
+*color12: rgb:85/cb/ff
+
+! magentas
+*color5: rgb:f5/53/bf
+*color13: rgb:f7/75/cc
+
+! cyans
+*color6: rgb:26/c9/9e
+*color14: rgb:51/d3/b1
+
+! whites
+*color7: rgb:e0/dc/e0
+*color15: rgb:ff/fc/ff
