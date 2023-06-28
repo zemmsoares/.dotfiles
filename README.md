@@ -1,1 +1,1 @@
-# Set the target directory for the Xorg configuration files
+
