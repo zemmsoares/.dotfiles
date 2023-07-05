@@ -1,0 +1,91 @@
+{
+  "version": "5.0.1",
+  "manifest_version": 2,
+  "name": "zemmsoares-dotfiles-theme",
+  "theme": {
+    "colors": {
+      "bookmark_text": [
+        255,
+        252,
+        255
+      ],
+      "frame": [
+        40,
+        38,
+        41
+      ],
+      "ntp_background": [
+        71,
+        66,
+        71
+      ],
+      "ntp_text": [
+        255,
+        252,
+        255
+      ],
+      "tab_background_text": [
+        255,
+        252,
+        255
+      ],
+      "tab_background_text_inactive": [
+        255,
+        252,
+        255
+      ],
+      "tab_background_text_incognito": [
+        255,
+        252,
+        255
+      ],
+      "tab_background_text_incognito_inactive": [
+        255,
+        252,
+        255
+      ],
+      "tab_text": [
+        255,
+        252,
+        255
+      ],
+      "toolbar": [
+        71,
+        66,
+        71
+      ],
+      "omnibox_text": [
+        255,
+        252,
+        255
+      ],
+      "omnibox_background": [
+        40,
+        38,
+        41
+      ]
+    },
+    "tints": {
+      "buttons": [
+        0.5697167755991286,
+        0.5,
+        0.5
+      ],
+      "frame_inactive": [
+        -1,
+        -1,
+        -1
+      ],
+      "frame_incognito": [
+        0.7743589743589742,
+        1,
+        0.55
+      ],
+      "frame_incognito_inactive": [
+        0.7743589743589742,
+        1,
+        0.55
+      ]
+    }
+  }
+}
