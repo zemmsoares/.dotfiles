@@ -9,3 +9,7 @@
 [submodule "polybar/.config/polybar/custom-modules/polybar-news"]
 	path = polybar/.config/polybar/custom-modules/polybar-news
 	url = https://github.com/zemmsoares/polybar-news.git
+	
+[submodule "polybar/.config/polybar/custom-modules/polybar-hackernews"]
+	path = polybar/.config/polybar/custom-modules/polybar-hackernews
+	url = https://github.com/zemmsoares/polybar-hackernews.git
