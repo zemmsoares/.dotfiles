@@ -8,12 +8,13 @@ sudo pacman -Syu
 echo "Installing necessary packages..."
 sudo pacman -S --needed alacritty crkbd dunst i3 mpd mpv newsboat picom zsh stow ttf-dejavu git
 
-# clone the dotfiles
-echo "Cloning dotfiles from GitHub..."
-git clone --recursive https://github.com/zemmsoares/.dotfiles ~/.dotfiles
-
 # go to .dotfiles directory
 cd ~/.dotfiles
+
+# pull latest changes from the repository and update submodules
+echo "Updating repository and submodules..."
+git pull origin master
+git submodule update --init --recursive
 
 # stow configuration files
 echo "Stowing configuration files..."

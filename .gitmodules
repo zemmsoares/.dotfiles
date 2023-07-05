@@ -5,7 +5,3 @@
 [submodule "notion"]
 	path = polybar/.config/polybar/custom-modules/notion
 	url = git@github.com:zemmsoares/polybar-notion.git
-
-[submodule "polybar-news"]
-	path = polybar/.config/polybar/custom-modules/polybar-news
-	url = git@github.com:zemmsoares/polybar-news.git
