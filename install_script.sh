@@ -10,7 +10,7 @@ sudo pacman -S --needed alacritty crkbd dunst i3 mpd mpv newsboat picom zsh stow
 
 # clone the dotfiles
 echo "Cloning dotfiles from GitHub..."
-git clone https://github.com/zemmsoares/.dotfiles ~/.dotfiles
+git clone --recursive https://github.com/zemmsoares/.dotfiles ~/.dotfiles
 
 # go to .dotfiles directory
 cd ~/.dotfiles
