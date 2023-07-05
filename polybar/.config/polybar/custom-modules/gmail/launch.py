@@ -20,8 +20,6 @@ args = parser.parse_args()
 DIR = Path(__file__).resolve().parent
 CREDENTIALS_PATH = Path(DIR, args.credentials)
 
-unread_prefix = '%{F' + args.color + '}' + args.prefix + ' %{F-}'
-error_prefix = '%{F' + args.color + '}\ue9b6 %{F-}'
 count_was = 0
 
 
@@ -29,9 +27,9 @@ def print_count(count, is_odd=False):
     tilde = '~' if is_odd else ''
     output = ''
     if count >= 0:
-        output = unread_prefix + tilde + str(count)
+        output = tilde + str(count)
     else:
-        output = (args.prefix + ' ' + tilde).strip()
+        output = (tilde).strip()
     print(output, flush=True)
 
 
@@ -58,7 +56,7 @@ while True:
             time.sleep(2)
     except errors.HttpError as error:
         if error.resp.status == 404:
-            print(error_prefix + f'"{args.label}" label not found', flush=True)
+            print('"{args.label}" label not found', flush=True)
         else:
             print_count(count_was, True)
         time.sleep(5)
