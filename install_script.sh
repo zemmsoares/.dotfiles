@@ -28,4 +28,7 @@ echo "Installing fonts..."
 sudo cp fonts/MaterialSymbols-Rounded.ttf /usr/share/fonts/TTF/
 fc-cache -fv
 
+
+#nvim lserver
+#npm install -g typescript typescript-language-server
 echo "All tasks completed successfully!"
