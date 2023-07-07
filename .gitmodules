@@ -13,3 +13,7 @@
 [submodule "polybar/.config/polybar/custom-modules/polybar-hackernews"]
 	path = polybar/.config/polybar/custom-modules/polybar-hackernews
 	url = git@github.com:zemmsoares/polybar-hackernews.git
+
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = git@github.com:zemmsoares/nvim.git
