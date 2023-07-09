@@ -3,42 +3,36 @@ window:
     x: 10
     y: 10
   decorations: none
-  opacity: 0.9
+  opacity: 0.75
 
 colors:
   primary:
-    background: "#282629"
-    foreground: "#E0DCE0"
-  cursor:
-    text: "#282629"
-    cursor: "#CC78FA"
-  selection:
-    text: "#282629"
-    background: "#66BFFF"
+    background: "0x1a1b26"
+    foreground: "0xa9b1d6"
+
   normal:
-    black: "#656066"
-    red: "#FF4050"
-    green: "#A4CC35"
-    yellow: "#FFD24A"
-    blue: "#66BFFF"
-    magenta: "#F553BF"
-    cyan: "#26C99E"
-    white: "#E0DCE0"
+    black:   '0x32344a'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7da6ff'
+    magenta: '0xad8ee6'
+    cyan:    '0x0db9d7'
+    white:   '0x9699a8'
+
+    # Bright colors
   bright:
-    black: "#847E85"
-    red: "#FF6673"
-    green: "#B6D65D"
-    yellow: "#FFDA6E"
-    blue: "#85CBFF"
-    magenta: "#F775CC"
-    cyan: "#51D3B1"
-    white: "#FFFCFF"
-  dim:
-    black: "#474247"
-    red: "#D43B48"
-    green: "#8BAB33"
-    yellow: "#D4B043"
-    blue: "#5AA0D4"
-    magenta: "#CC4AA1"
-    cyan: "#26A887"
-    white: "#C1BCC2"
+    black:   '0x4b4d5c'
+    red:     '0xff8a9c'
+    green:   '0xcaf284'
+    yellow:  '0xffb074'
+    blue:    '0x8db0ff'
+    magenta: '0xc69bf2'
+    cyan:    '0x1ecbda'
+    white:   '0xbcc2d9'
+
+  indexed_colors:
+    - { index: 16, color: "0xffa066" }
+    - { index: 17, color: "0xff5d62" }
+    - { index: 18, color: "0x16161e" }
+

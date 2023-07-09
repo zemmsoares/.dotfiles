@@ -26,6 +26,7 @@ done
 # install fonts
 echo "Installing fonts..."
 sudo cp fonts/MaterialSymbols-Rounded.ttf /usr/share/fonts/TTF/
+
 fc-cache -fv
 
 

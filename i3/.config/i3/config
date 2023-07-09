@@ -192,12 +192,12 @@ for_window [class=".*"] border pixel 1
 # }
 
 # start services
-exec --no-startup-id feh --bg-fill $HOME/Pictures/Wallpapers/015.jpg
+exec --no-startup-id feh --bg-fill $HOME/.config/wallpaper/wallpaper.jpg
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 #exec_always --no-startup-id xsetroot -solid '#000000'
 
-gaps inner 0
-smart_gaps on
+gaps inner 10
+smart_borders on
 
 exec --no-startup-id ~/.config/polybar/launch.sh
