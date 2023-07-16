@@ -144,7 +144,7 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id feh --bg-fill $HOME/.config/wallpaper/wallpaper.jpg
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no-startup-id transmission-daemon -c /mnt/data/torrents/watch
+#exec_always --no-startup-id transmission-daemon -c /mnt/data/torrents/watch
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 #exec_always --no-startup-id xsetroot -solid '#000000'

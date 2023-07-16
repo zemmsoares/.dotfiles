@@ -109,6 +109,7 @@ source $ZSH/oh-my-zsh.sh
 
 #custom aliases
 alias vim='nvim'
+alias tsm="transmission-remote"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

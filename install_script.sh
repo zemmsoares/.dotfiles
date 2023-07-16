@@ -6,7 +6,7 @@ sudo pacman -Syu
 
 # install necessary packages
 echo "Installing necessary packages..."
-sudo pacman -S --needed alacritty crkbd dunst i3 mpd mpv newsboat picom zsh stow ttf-dejavu git
+sudo pacman -S --needed alacritty crkbd dunst i3 mpd mpc mpv newsboat picom zsh stow ttf-dejavu git
 
 # go to .dotfiles directory
 cd ~/.dotfiles
