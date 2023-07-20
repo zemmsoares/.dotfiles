@@ -1,35 +1,35 @@
 ! general
-*background: rgb:28/26/29
-*foreground: rgb:e0/dc/e0
+*background: #101010
+*foreground: #a9b1d6
 
 ! blacks
-*color0: rgb:65/60/66
-*color8: rgb:84/7e/85
+*color0: #32344a
+*color8: #4b4d5c
 
 ! reds
-*color1: rgb:ff/40/50
-*color9: rgb:ff/66/73
+*color1: #f7768e
+*color9: #ff8a9c
 
 ! greens
-*color2: rgb:a4/cc/35
-*color10: rgb:b6/d6/5d
+*color2: #9ece6a
+*color10: #caf284
 
 ! yellows
-*color3: rgb:ff/d2/4a
-*color11: rgb:ff/da/6e
+*color3: #cebe94
+*color11: #e9d7a8
 
 ! blues
-*color4: rgb:66/bf/ff
-*color12: rgb:85/cb/ff
+*color4: #7da6ff
+*color12: #8db0ff
 
 ! magentas
-*color5: rgb:f5/53/bf
-*color13: rgb:f7/75/cc
+*color5: #ad8ee6
+*color13: #c69bf2
 
 ! cyans
-*color6: rgb:26/c9/9e
-*color14: rgb:51/d3/b1
+*color6: #0db9d7
+*color14: #1ecbda
 
 ! whites
-*color7: rgb:e0/dc/e0
-*color15: rgb:ff/fc/ff
+*color7: #9699a8
+*color15: #bcc2d9

@@ -2,19 +2,19 @@ window:
   padding:
     x: 10
     y: 10
-  decorations: none
-  opacity: 0.75
+    decorations: none
+  opacity: 1
 
 colors:
   primary:
-    background: "0x1a1b26"
+    background: "0x101010"
     foreground: "0xa9b1d6"
 
   normal:
     black:   '0x32344a'
     red:     '0xf7768e'
     green:   '0x9ece6a'
-    yellow:  '0xe0af68'
+    yellow:  '0xc9b991'
     blue:    '0x7da6ff'
     magenta: '0xad8ee6'
     cyan:    '0x0db9d7'
@@ -25,7 +25,7 @@ colors:
     black:   '0x4b4d5c'
     red:     '0xff8a9c'
     green:   '0xcaf284'
-    yellow:  '0xffb074'
+    yellow:  '0xe9d7a8'
     blue:    '0x8db0ff'
     magenta: '0xc69bf2'
     cyan:    '0x1ecbda'
@@ -35,4 +35,15 @@ colors:
     - { index: 16, color: "0xffa066" }
     - { index: 17, color: "0xff5d62" }
     - { index: 18, color: "0x16161e" }
+
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Regular
+    size: 14
+
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold
+    size: 14
 

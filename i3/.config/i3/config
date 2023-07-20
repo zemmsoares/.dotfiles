@@ -14,12 +14,22 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# class                 border    backgr. text    indicator child_border
+client.focused          #1B1B1B   #285577 #ffffff #2e9ef4   #E9D7A8
+client.focused_inactive #333333   #5f676a #ffffff #484e50   #242424
+client.unfocused        #161616   #222222 #888888 #292d2e   #242424
+client.urgent           #2f343a   #900000 #ffffff #900000   #900000
+client.placeholder      #000000   #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
 # Window Controls
 floating_modifier $mod
 #tiling_drag modifier titlebar
 bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec "alacritty --class=AlacrittyFloating,AlacrittyFloating"
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -fn 'JetBrainsMono Nerd Font-10'
 
 # change focus
 bindsym $mod+j focus left
@@ -129,6 +139,9 @@ mode "resize" {
 # Other Settings
 bindsym $mod+r mode "resize"
 for_window [class=".*"] border pixel 1
+for_window [class="AlacrittyFloating"] floating enable
+for_window [class="AlacrittyFloating"] resize set 1000 600
+
 gaps inner 5
 smart_borders on
 
@@ -142,7 +155,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
-exec --no-startup-id feh --bg-fill $HOME/.config/wallpaper/wallpaper.jpg
+exec --no-startup-id feh --bg-fill $HOME/.config/wallpaper/wp02.jpg
 exec --no-startup-id ~/.config/polybar/launch.sh
 #exec_always --no-startup-id transmission-daemon -c /mnt/data/torrents/watch
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
