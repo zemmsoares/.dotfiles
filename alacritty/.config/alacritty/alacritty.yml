@@ -7,7 +7,7 @@ window:
 
 colors:
   primary:
-    background: "0x101010"
+    background: "0x171717"
     foreground: "0xa9b1d6"
 
   normal:

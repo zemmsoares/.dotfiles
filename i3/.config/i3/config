@@ -15,7 +15,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # class                 border    backgr. text    indicator child_border
-client.focused          #1B1B1B   #285577 #ffffff #2e9ef4   #E9D7A8
+client.focused          #947349   #285577 #ffffff #2e9ef4   #947349
 client.focused_inactive #333333   #5f676a #ffffff #484e50   #242424
 client.unfocused        #161616   #222222 #888888 #292d2e   #242424
 client.urgent           #2f343a   #900000 #ffffff #900000   #900000
@@ -155,9 +155,8 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
-exec --no-startup-id feh --bg-fill $HOME/.config/wallpaper/wp02.jpg
+exec --no-startup-id feh --bg-fill $HOME/.config/wallpaper/nicola-samori.png
 exec --no-startup-id ~/.config/polybar/launch.sh
-#exec_always --no-startup-id transmission-daemon -c /mnt/data/torrents/watch
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 #exec_always --no-startup-id xsetroot -solid '#000000'
