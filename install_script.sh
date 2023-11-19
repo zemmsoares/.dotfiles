@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Set the URL of the .dotfiles repository
-DOTFILES_REPO="https://github.com/zemmsoares/.dotfiles"
+DOTFILES_REPO_HTTPS="https://github.com/zemmsoares/.dotfiles"
+DOTFILES_REPO_SSH="git@github.com:zemmsoares/.dotfiles.git"
 
 # update system
 echo "Updating system..."
@@ -12,13 +13,13 @@ echo "Installing necessary packages..."
 sudo pacman -S --needed alacritty feh dunst picom polybar i3-wm zsh stow git
 
 # install neovim from source
-echo "Install neovim from source..."
-sudo pacman -S base-devel cmake unzip ninja curl
-cd /opt
-sudo git clone https://github.com/neovim/neovim
-sudo chown -R $USER:$USER neovim  # Change ownership to the current user
-cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
-sudo make install
+#echo "Install neovim from source..."
+#sudo pacman -S base-devel cmake unzip ninja curl
+#cd /opt
+#sudo git clone https://github.com/neovim/neovim
+#sudo chown -R $USER:$USER neovim  # Change ownership to the current user
+#cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
+#sudo make install
 
 # go to home directory
 cd ~
@@ -54,5 +55,9 @@ fc-cache -fv
 echo "get and set wallpaper..."
 sudo mkdir -p /usr/share/fonts/FiraCode/
 sudo mkdir -p /usr/share/fonts/MaterialSymbols/
+
+# Attempt to switch to SSH for future updates
+echo "Attempting to switch to SSH..."
+git remote set-url origin $DOTFILES_REPO_SSH
 
 echo "All tasks completed successfully!"
