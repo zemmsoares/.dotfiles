@@ -12,21 +12,36 @@ sudo pacman -Syu
 echo "Installing necessary packages..."
 sudo pacman -S --needed alacritty feh dunst picom polybar i3-wm zsh stow git
 
+#remove old configs
+echo "Removing old configs"
+rm -rf ~/.config/alacritty
+rm -rf ~/.config/dunst
+rm -rf ~/.config/picom
+rm -rf ~/.config/wallpaper
+rm -rf ~/.config/i3
+rm -rf ~/.config/nvim
+rm -rf ~/.config/polybar
+rm -f ~/.zshrc
+rm -f ~/.Xresources
+
 # install neovim from source
-#echo "Install neovim from source..."
-#sudo pacman -S base-devel cmake unzip ninja curl
-#cd /opt
-#sudo git clone https://github.com/neovim/neovim
-#sudo chown -R $USER:$USER neovim  # Change ownership to the current user
-#cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
-#sudo make install
+read -p "Do you want to install Neovim from source? (y/N) " install_neovim
+if [[ $install_neovim =~ ^[Yy]$ ]]; then
+  echo "Installing Neovim from source..."
+  sudo pacman -S base-devel cmake unzip ninja curl
+  cd /opt
+  sudo git clone https://github.com/neovim/neovim
+  sudo chown -R $USER:$USER neovim  # Change ownership to the current user
+  cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
+  sudo make install
+fi
 
 # go to home directory
 cd ~
 
 # Clone the .dotfiles repository
 echo "Cloning .dotfiles repository..."
-git clone $DOTFILES_REPO .dotfiles
+git clone $DOTFILES_REPO_HTTPS .dotfiles
 
 # go to .dotfiles directory
 cd ~/.dotfiles
