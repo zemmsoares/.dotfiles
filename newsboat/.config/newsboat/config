@@ -1,3 +1,0 @@
-include ~/.config/newsboat/theme
-auto-reload yes
-browser "elinks"

@@ -7,11 +7,11 @@ window:
 
 colors:
   primary:
-    background: "0x171717"
+    background: "0x01080E"
     foreground: "0xa9b1d6"
 
   normal:
-    black:   '0x32344a'
+    black:   '0x0A0E14'
     red:     '0xf7768e'
     green:   '0x9ece6a'
     yellow:  '0xc9b991'
@@ -20,7 +20,7 @@ colors:
     cyan:    '0x0db9d7'
     white:   '0x9699a8'
 
-    # Bright colors
+  # Bright colors
   bright:
     black:   '0x4b4d5c'
     red:     '0xff8a9c'
@@ -37,13 +37,13 @@ colors:
     - { index: 18, color: "0x16161e" }
 
 font:
+  size: 10
   normal:
-    family: "JetBrainsMono Nerd Font"
+    family: "Fira Code"
     style: Regular
-    size: 14
+    size: 10
 
   bold:
-    family: "JetBrainsMono Nerd Font"
+    family: "Fira Code"
     style: Bold
-    size: 14
-
+    size: 10
