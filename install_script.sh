@@ -15,9 +15,9 @@ sudo pacman -S --needed alacritty feh dunst picom polybar i3-wm zsh stow git
 echo "Install neovim from source..."
 sudo pacman -S base-devel cmake unzip ninja curl
 cd /opt
-git clone https://github.com/neovim/neovim
+sudo git clone https://github.com/neovim/neovim
+sudo chown -R $USER:$USER neovim  # Change ownership to the current user
 cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
-git checkout stable
 sudo make install
 
 # go to home directory
@@ -37,7 +37,7 @@ git submodule update --init --recursive
 
 # stow configuration files
 echo "Stowing configuration files..."
-for dir in alacritty bin dunst i3 nvim picom polybar Xresources zsh
+for dir in alacritty bin dunst i3 nvim picom polybar Xresources zsh wallpaper
 do
   stow -R $dir
 done
@@ -54,7 +54,5 @@ fc-cache -fv
 echo "get and set wallpaper..."
 sudo mkdir -p /usr/share/fonts/FiraCode/
 sudo mkdir -p /usr/share/fonts/MaterialSymbols/
-sudo cp wallpaper/wallpaper.png ~/.config/i3/wallpaper.png
 
 echo "All tasks completed successfully!"
-
