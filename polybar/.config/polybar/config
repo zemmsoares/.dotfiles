@@ -19,65 +19,46 @@
 include-file = colors.ini
 include-file = modules.ini
 
-[global/wm]
-margin-bottom = 0
-margin-top = 0
-
 [bar/main]
-monitor = ${env:MONITOR:HDMI-1}
-tray-position = ${env:TRAY_POSITION:right}
-tray-background = ${colors.shade2}
-monitor-strict = false
-bottom = false 
-fixed-center = true
-height = 24
+width = 100%
+height = 16pt
 
 scroll-up = "#i3.prev"
 scroll-down = "#i3.next"
 
-padding = 1
-
-line-size = 0
-line-color = ${colors.red}
-
-border-size = 0
-
-
-module-margin-left = 0
-module-margin-right = 0
-
-; Color settings
 background = ${colors.background}
-forearound = ${colors.foreground}
+foreground = ${colors.foreground}
 
-font-0 = "JetBrainsMono Nerd Font:pixelsize=10;4"
-font-1 = "JetBrainsMono Nerd Font:pixelsize=10;4"
-font-2 = "JetBrainsMono Nerd Font:pixelsize=20;4"
-font-3 = "Material Symbols Rounded:size=12;5"
+line-size = 0pt
+border-size = 0pt
+border-color = #00000000
 
+padding-left = 0
+padding-right = 1
 
-modules-left =  i3 news-fetcher news-rotator sep news-display sep title
-modules-center = date
-modules-right =  gmail sep filesystem sep cpu_bar sep memory_bar sep network sep pulseaudio bd
+module-margin = 1
 
-spacing = 0
-separator =
-dim-value = 1.0
+separator = |
+separator-foreground = ${colors.disabled}
 
-;wm-restack = i3
+font-0 = Fira Code:pixelsize=10;2
+
+modules-left = xworkspaces xwindow
+modules-right = filesystem pulseaudio xkeyboard memory cpu wlan battery date
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
 enable-ipc = true
 
-cursor-click = pointer 
-;cursor-scroll = ns-resize
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
 
 [settings]
+screenchange-reload = true
+pseudo-transparency = true
 
-screenchange-reload = false
-
-compositing-background = source
-compositing-foreground = over
-compositing-overline = over
-compositing-underline = over
-compositing-border = over
-
-pseudo-transparency = false
+; vim:ft=dosini
