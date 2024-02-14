@@ -1,0 +1,50 @@
+[[colors.indexed_colors]]
+color = "0xffa066"
+index = 16
+
+[[colors.indexed_colors]]
+color = "0xff5d62"
+index = 17
+
+[[colors.indexed_colors]]
+color = "0x16161e"
+index = 18
+
+[colors.bright]
+black = "0x4b4d5c"
+blue = "0x8db0ff"
+cyan = "0x1ecbda"
+green = "0xcaf284"
+magenta = "0xc69bf2"
+red = "0xff8a9c"
+white = "0xbcc2d9"
+yellow = "0xe9d7a8"
+
+[colors.normal]
+black = "0x32344a"
+blue = "0x7da6ff"
+cyan = "0x0db9d7"
+green = "0x9ece6a"
+magenta = "0xad8ee6"
+red = "0xf7768e"
+white = "0x9699a8"
+yellow = "0xc9b991"
+
+[colors.primary]
+background = "0x171717"
+foreground = "0xa9b1d6"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[window]
+opacity = 0.9
+
+[window.padding]
+x = 10
+y = 10
