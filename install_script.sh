@@ -19,22 +19,10 @@ rm -rf ~/.config/dunst
 rm -rf ~/.config/picom
 rm -rf ~/.config/wallpaper
 rm -rf ~/.config/i3
-rm -rf ~/.config/nvim
+rm -rf ~/.config/redshift
 rm -rf ~/.config/polybar
 rm -f ~/.zshrc
 rm -f ~/.Xresources
-
-# install neovim from source
-read -p "Do you want to install Neovim from source? (y/N) " install_neovim
-if [[ $install_neovim =~ ^[Yy]$ ]]; then
-  echo "Installing Neovim from source..."
-  sudo pacman -S base-devel cmake unzip ninja curl
-  cd /opt
-  sudo git clone https://github.com/neovim/neovim
-  sudo chown -R $USER:$USER neovim  # Change ownership to the current user
-  cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
-  sudo make install
-fi
 
 # go to home directory
 cd ~
@@ -51,25 +39,56 @@ echo "Updating repository and submodules..."
 git pull origin master
 git submodule update --init --recursive
 
-# stow configuration files
+# Removing old configs and installing necessary packages
+echo "Removing old configs and installing necessary packages..."
+
+# Stow config files
 echo "Stowing configuration files..."
-for dir in alacritty bin dunst i3 nvim picom polybar Xresources zsh wallpaper
+for dir in alacritty bin dunst i3 picom polybar Xresources zsh wallpaper redshift
 do
   stow -R $dir
 done
 
-# install fonts
-echo "Installing fonts..."
-sudo mkdir -p /usr/share/fonts/FiraCode/
-sudo mkdir -p /usr/share/fonts/MaterialSymbols/
-sudo cp fonts/MaterialSymbols-Rounded.ttf /usr/share/fonts/MaterialSymbols/
-sudo cp fonts/FiraCode-* /usr/share/fonts/FiraCode/
-fc-cache -fv
+# install Neovim from source
+read -p "Do you want to install Neovim from source? (y/N) " install_neovim
+if [[ $install_neovim =~ ^[Yy]$ ]]; then
+  echo "Removing old nvim config"
+  rm -rf ~/.config/nvim
+  echo "Installing Neovim from source..."
+  sudo pacman -S base-devel cmake unzip ninja curl
+  cd /opt
+  sudo git clone https://github.com/neovim/neovim
+  sudo chown -R $USER:$USER neovim
+  cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
+  sudo make install
+  echo "Stowing nvim ..."
+  stow nvim
+fi
 
-# install fonts
-echo "get and set wallpaper..."
-sudo mkdir -p /usr/share/fonts/FiraCode/
-sudo mkdir -p /usr/share/fonts/MaterialSymbols/
+# Fonts
+read -p "Do you want to install FiraCode? (y/N) " install_firacode
+if [[ $install_firacode =~ ^[Yy]$ ]]; then
+  echo "Installing FiraCode fonts..."
+  sudo mkdir -p /usr/share/fonts/FiraCode/
+  sudo cp fonts/FiraCode-* /usr/share/fonts/FiraCode/
+  fc-cache -fv
+fi
+
+read -p "Do you want to install Material Symbols? (y/N) " install_materialsymbols
+if [[ $install_materialsymbols =~ ^[Yy]$ ]]; then
+  echo "Installing Material Symbols fonts..."
+  sudo mkdir -p /usr/share/fonts/MaterialSymbols/
+  sudo cp fonts/MaterialSymbols-Rounded.ttf /usr/share/fonts/MaterialSymbols/
+  fc-cache -fv
+fi
+
+read -p "Do you want to install FontAwesome? (y/N) " install_fontawesome
+if [[ $install_fontawesome =~ ^[Yy]$ ]]; then
+  echo "Installing FontAwesome..."
+  sudo mkdir -p /usr/share/fonts/FontAwesome/
+  sudo cp fonts/Font Awesome 6 Brands-Regular-400.otf /usr/share/fonts/FontAwesome/
+  fc-cache -fv
+fi
 
 # Attempt to switch to SSH for future updates
 echo "Attempting to switch to SSH..."

@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vim='nvim'
+#alias vim='nvim'
 
 export PATH="$PATH:$HOME/.local/bin/scripts"
 
@@ -116,3 +116,6 @@ export PATH="$PATH:$HOME/.local/bin/scripts"
 
 
 
+
+# Created by `pipx` on 2024-02-15 09:34:23
+export PATH="$PATH:/home/zemmsoares/.dotfiles/bin/.local/bin"
